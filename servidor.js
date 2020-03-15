@@ -3,6 +3,8 @@ const WebSocket = require('ws');
 // starts server instance on http://localhost:8080
 const wss = new WebSocket.Server({ port: 8080 });
 
+console.log("Bievenido al sistema sendme!. Servidor escuchando por el puerto 8080.");
+
 // waits for connection to be established from the client
 // the callback argument ws is a unique for each client
 wss.on('connection', (ws) => {
